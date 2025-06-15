@@ -1,5 +1,5 @@
 export type AuthServerConfig = {
-  url: string;
-  clientId: string;
-  clientSecret: string;
-}
+	url: string;
+	clientId: string;
+	clientSecret: string;
+};

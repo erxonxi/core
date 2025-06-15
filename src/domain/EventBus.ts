@@ -2,6 +2,6 @@ import { DomainEventSubscribers } from 'infrastructure/eventBus/DomainEventSubsc
 import { DomainEvent } from './DomainEvent';
 
 export interface EventBus {
-  publish(events: Array<DomainEvent>): Promise<void>;
-  addSubscribers(subscribers: DomainEventSubscribers): void;
+	publish(events: Array<DomainEvent>): Promise<void>;
+	addSubscribers(subscribers: DomainEventSubscribers): void;
 }

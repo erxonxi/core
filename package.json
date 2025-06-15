@@ -1,13 +1,18 @@
 {
 	"name": "@erxonxi/backend-core",
 	"version": "0.1.0",
-	"main": "index.js",
 	"author": "Rubén Ruiz Pedreira",
 	"license": "MIT",
+	"description": "Core backend functionalities following Hexagonal Architecture principles.",
+	"main": "dist/srcindex.js",
+	"types": "dist/src/index.d.ts",
 	"scripts": {
+		"ci": "yarn install && yarn build",
 		"build": "tsc",
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"lint": "eslint . --ext .ts"
+		"lint": "eslint . --ext .ts",
+		"lint:fix": "eslint . --ext .ts --fix",
+		"format": "prettier --write ."
 	},
 	"dependencies": {
 		"amqplib": "^0.10.8",
@@ -19,9 +24,14 @@
 		"winston": "^3.17.0"
 	},
 	"devDependencies": {
+		"@eslint/js": "^9.29.0",
 		"@types/amqplib": "^0.10.7",
 		"@types/jsonwebtoken": "^9.0.9",
 		"@types/uuid-validate": "^0.0.3",
-		"typescript": "^5.8.3"
+		"eslint": "^9.29.0",
+		"globals": "^16.2.0",
+		"prettier": "^3.5.3",
+		"typescript": "^5.8.3",
+		"typescript-eslint": "^8.34.0"
 	}
 }

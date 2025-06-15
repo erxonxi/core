@@ -1,5 +1,5 @@
 interface MongoConfig {
-  url: string;
+	url: string;
 }
 
 export default MongoConfig;
