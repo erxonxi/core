@@ -1,6 +1,6 @@
 {
-	"name": "@erxonxi/backend-core",
-	"version": "0.1.0",
+	"name": "@erxonxi/core",
+	"version": "1.0.0",
 	"author": "Rubén Ruiz Pedreira",
 	"license": "MIT",
 	"description": "Core backend functionalities following Hexagonal Architecture principles.",
