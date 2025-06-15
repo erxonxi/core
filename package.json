@@ -1,0 +1,27 @@
+{
+	"name": "@erxonxi/backend-core",
+	"version": "0.1.0",
+	"main": "index.js",
+	"author": "Rubén Ruiz Pedreira",
+	"license": "MIT",
+	"scripts": {
+		"build": "tsc",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"lint": "eslint . --ext .ts"
+	},
+	"dependencies": {
+		"amqplib": "^0.10.8",
+		"jsonwebtoken": "^9.0.2",
+		"mongodb": "^6.17.0",
+		"node-dependency-injection": "^3.2.2",
+		"uuid": "^11.1.0",
+		"uuid-validate": "^0.0.3",
+		"winston": "^3.17.0"
+	},
+	"devDependencies": {
+		"@types/amqplib": "^0.10.7",
+		"@types/jsonwebtoken": "^9.0.9",
+		"@types/uuid-validate": "^0.0.3",
+		"typescript": "^5.8.3"
+	}
+}
