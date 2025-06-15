@@ -1,8 +1,8 @@
 import { InvalidArgumentError } from './InvalidArgumentError';
 
-export type Primitives = String | string | number | Boolean | boolean | Date | object;
+export type ValueObjectPrimitives = String | string | number | Boolean | boolean | Date | object;
 
-export abstract class ValueObject<T extends Primitives> {
+export abstract class ValueObject<T extends ValueObjectPrimitives> {
   readonly value: T;
 
   constructor(value: T) {
