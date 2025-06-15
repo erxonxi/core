@@ -6,9 +6,11 @@
 	"description": "Core backend functionalities following Hexagonal Architecture principles.",
 	"main": "dist/srcindex.js",
 	"types": "dist/src/index.d.ts",
+	"files": [
+		"dist/"
+	],
 	"scripts": {
 		"ci": "yarn install && yarn build",
-		"postinstall": "yarn ci",
 		"build": "tsc",
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"lint": "eslint . --ext .ts",
